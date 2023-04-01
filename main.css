@@ -1,3 +1,110 @@
+body {
+min-height: 100vh;
+margin: 0;
+flex-direction: column;
+}
+
 .hp {
     display: flex;
+}
+
+.logo {
+    background-color: #38618C;
+    align-items: flex-end;
+    height: 25vh;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.logo > div {
+    display: flex;
+    align-items: center;
+}
+
+.logo > div > img {
+    height: 80px;
+}
+
+.logo > div > h3 {
+    color: white;
+    align-content: center;
+}
+
+.menu {
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.login > button {
+    display: flex;
+    background: black;
+    gap: 12px;
+    border-radius: 24px;
+}
+
+.login > button > p {
+    color: white;
+    margin: 12px;
+}
+
+.slogan {
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.slogan > img {
+    max-width: 100vw;
+}
+
+.promotion1, .promotion2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+
+}
+
+.promotion2 {
+
+}
+
+.promotionpic {
+    margin-top: 10px;
+}
+.promotionpic > img {
+    max-width: 100vw;
+    max-height: 80vh;
+}
+
+.reviews {
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.send > button {
+    margin: 10px;
+    display: flex;
+    background: black;
+    gap: 12px;
+    border-radius: 24px;
+}
+
+.send > button > p {
+    color: white;
+    margin: 12px;
+}
+
+.footer {
+
 }
