@@ -1,3 +1,6 @@
+/*index.html*/
+window.login.showModal();
+
 let myMenubar = document.querySelector(".menubar");
 
 myMenubar.addEventListener("click", onMenubarClicked);
