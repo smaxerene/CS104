@@ -17,9 +17,28 @@
     </div>
 
     <div class="hp menu">
-        <div class="login"><button> <p>Client Login</p> </button></div>
-        <div class="menubar"> <img height="20px" src="./images/menu.png" alt=""> </div>
+        <div class="login"><button onclick="window.login.showModal()"> <p>Client Login</p> </button></div>
+        <div> <img class="menubar" height="20px" src="./images/menu.png" alt=""> </div>
     </div>
+
+     <!--Client Login-->
+     <dialog id="login">
+        <form method="dialog">
+            <button class="exit">X</button>
+        </form>
+
+        <div class = "clientLogin-wrapper">
+           <div><img class="iconLogin" src="./images/iconplaceholder.png" alt=""></div>
+           <div class="cltext">
+            <div><input type="text" placeholder="Username"></div>
+            <div><input type="text" placeholder="Password"></div>
+           </div>
+           <div class="clbuttons">
+            <div><button class="cllogin">Login</button></div>
+            <div><button class="clsignup">Sign Up</button></div>
+           </div>
+        </div>
+    </dialog>
 
     <div class="auheading"> 
         <h2>ABOUT US</h2> 
@@ -39,7 +58,7 @@
     <div class="divider"></div>
 
     <div class="au craig">
-        <div class="imgcraig"><img src="./images/imgplaceholder3.png" alt=""></div>
+        <div class="imgcraig"><img src="./images/Craig.jpg" alt=""></div>
         <div class="auinfo">
             <div><h3>Craig Gubbins</h3></div>
             <div><p>Principal</p></div>
@@ -91,7 +110,7 @@
     </div>
 
     <div class="au genevieve">
-        <div class="imggen"><img src="./images/imgplaceholder3.png" alt=""></div>
+        <div class="imggen"><img src="./images/Genevieve.jpg" alt=""></div>
         <div class="auinfo">
             <div><h3>Genevieve Wardrop</h3></div>
             <div> <p>Principal</p></div>

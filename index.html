@@ -17,10 +17,30 @@
     </div>
 
     <div class="hp menu">
-        <div class="login"><button> <p>Client Login</p> </button></div>
+        <div class="login"><button onclick="window.login.showModal()"> <p>Client Login</p> </button></div>
         <div> <img class="menubar" height="20px" src="./images/menu.png" alt=""> </div>
     </div>
 
+    <!--Client Login-->
+    <dialog id="login">
+        <form method="dialog">
+            <button class="exit">X</button>
+        </form>
+
+        <div class = "clientLogin-wrapper">
+           <div><img class="iconLogin" src="./images/iconplaceholder.png" alt=""></div>
+           <div class="cltext">
+            <div><input type="text" placeholder="Username"></div>
+            <div><input type="text" placeholder="Password"></div>
+           </div>
+           <div class="clbuttons">
+            <div><button class="cllogin">Login</button></div>
+            <div><button class="clsignup">Sign Up</button></div>
+           </div>
+        </div>
+    </dialog>
+
+    <!--
     <div class="menuout menuout-hide">
         <div> <img class="menuimg" src="./images/imgplaceholder1.png" alt=""> </div>
 
@@ -50,58 +70,79 @@
 
         <div class="menuFooter">
         </div>
-    
-    </div>
+    </div> -->
 
 
     <div class="hp slogan">
-        <p>Lorem Ipsum</p>
-        <img src="./images/imgplaceholder1.png" alt="">
+        <div>
+            <p>New Zealand's only full-time independent Background Screening company</p>
+        </div>
+        <div><img src="./images/imgplaceholder1.png" alt=""></div>
+        
     </div>
+
+    <div class="divider"></div>
 
     <div class="hp promotion1">
-        <h4>Lorem Ipsum</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. </p>
-        <div class="promButton"><button><p> </p></button></div>
+        <h4>PVL is New Zealand’s most qualified employment background screening company for: </h4>
+        <p> Background checks, Pre-employment screening, Criminal checks, Verification of qualifications,
+            Forensic analysis of CV's for deception, Full international service available, Free advice and constant support </p>
+        <div class="promButton"><button>Find Out More</button></div>
     </div>
 
-    <div class="hp video"></div>
+    <div class="divider"></div>
+
+    <div class="hp video">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI"> </iframe>    
+    </div>
+
+    <div class="divider"></div>
 
     <div class="hp promotion2">
-        <h4>Lorem Ipsum</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. </p>
-        <div class="promButton"><button><p> </p></button></div>
+        <h4>What We Can Offer You</h4>
+        <p>From a traditional background check to online integrity tests or 
+            specialised forensic analysis of your job applicant's CV's, our 
+            products and services are the most comprehensive available in New
+            Zealand, and can be tailored to meet the needs of any company.
+            <br><br>
+            You can pick and choose which enquires you want us to undertake - 
+            pay only for the actual checks you request.
+            <br><br>
+            Or select from one of our popular screening packages for a 
+            complete 360 degree assessment of your job applicants. </p>
+        <div class="promButton"><button>Find Out More</button></div>
     </div>
+
+    <div class="divider"></div>
 
     <div class="hp promotionpic">
         <img src="./images/imgplaceholder2.png" alt="">
     </div>
 
+    <div class="divider"></div>
+
     <div class="hp reviews"></div>
 
+    <div class="divider"></div>
+
     <div class="hp contact">
-        <h4>Lorem Ipsum</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. </p>
+        <h4>Don’t hesitate to ask – We are here to help our clients solve their problems.</h4>
+        <p>You can contact us anytime.  If we are not immediately available, 
+            please leave a message.  You can be assured of a prompt response. <br><br></p>
         <div>  <input type="text" placeholder="Name"> </div>
         <div>  <input type="text" placeholder="Phone Number"> </div>
         <div>  <input type="text" placeholder="Email"> </div>
         <div> <input type="text" placeholder="Message"> </div>
-        <div class="send"> <button><p>Send Message</p> </button> </div>
+        <div class="send"> <button><p>Send Message</p></button> </div>
     </div>
 
-    <div class="hpcontactus">
-
+    <div class="hp contactus">
+        <div><img src="./images/logoblack.png" alt=""></div>
+        <div><p>Social Media</p></div>
     </div>
 
     <div class="hp footer">
-        <div class=""></div>
-        <div class=""></div>
+        <div class=""><p>Personal Verification Ltd 2006 - 2023 © All rights reserved - site last updated April 2023</p></div>
     </div>
         
 </body>
