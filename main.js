@@ -1,11 +1,9 @@
 /*index.html*/
+
+/*Client Login*/
 window.login.showModal();
 
-let myMenubar = document.querySelector(".menubar");
-
-myMenubar.addEventListener("click", onMenubarClicked);
-function onMenubarClicked() {
-    let mymenuout = document.querySelector(".menuout");
-    mymenuout.classList.toggle("menuout-hide");
-    mymenuout.classList.toggle("menuout-show");
-}
+/*Menu*/
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }

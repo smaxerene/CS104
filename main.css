@@ -15,6 +15,10 @@ body {
     flex-direction: column;
 }
 
+h3 {
+     font-family: myFirstFont;
+}
+
 h4 {
     font-family: mySecondFont;
     margin-left: 25px; 
@@ -37,7 +41,7 @@ p {
     
 .logo {
     background-color: #38618C;
-    height: 25vh;
+    height: 22vh;
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
@@ -58,13 +62,13 @@ p {
     font-family: myFirstFont;
 }
     
-.menu {
+.menupart {
     background-color: #80A1C3;
     justify-content: space-between;
     align-items: center;
 }
     
-.menu > div {
+.menupart > div {
     margin: 15px;
 }
 
@@ -157,35 +161,69 @@ p {
     max-height: auto;
 }
     
-.menuout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.menu {
     background-color: white;
-    box-shadow: 4.5px 9.0px 9.0px hsl(0deg 0% 0% / 0.36);
     height: 125vh;
     width: 300px;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 5;
     transition: 1s;
     transition-timing-function: ease-out;
 }
     
-.menuout-hide {
-    transform: translate(100%, 0);
+.menu-hide {
+    transform: translate(-100%, 0);
 }
     
-.menuout-show {
-    transform: translate(0,0);
+.menu-show {
+    transform: translate(0, 0);
 }
+
+.back {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+/*.sidenav a:hover {
+    color: #f1f1f1;
+} */
     
 .menuAcc {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;;
+}
+
+.menuOpt {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menuOpt > div {
+    background-color: #80A1C3;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.menuOPt > div > a {
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuOPt > div > a:hover {
+    color: #f1f1f1;
+}
+
+.menuFooter {
+    background-color: #80A1C3;
 }
     
 .icon {

@@ -16,10 +16,66 @@
         <div> <h3>Personal Verification Limited</h3> </div>
     </div>
 
-    <div class="hp menu">
+    <div class="hp menupart">
+        <div> <img class="menubar" height="20px" src="./images/menu.png" alt=""/> </div>
         <div class="login"><button onclick="window.login.showModal()"> <p>Client Login</p> </button></div>
-        <div> <img class="menubar" height="20px" src="./images/menu.png" alt=""> </div>
     </div>
+
+      <!--Menubar Contents-->
+    <div id="mySidenav" class="menu menu-hide">
+        <div> <img class="menuimg" src="./images/imgplaceholder1.png" alt=""> </div>
+
+        <div class="back"><img height="30px" src="./images/back.png" alt=""></div>
+
+        <div class="menuAcc">
+            <img class="icon" height="130px" src="./images/iconplaceholder.png" alt="">
+            <h3>Name</h3>
+            <p>username</p>
+            <div class="AccButton"><button>Account</button></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="menuOpt">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="">Background Screening Service</a></div>
+            <div><a href="">Other Additional Services</a></div>
+            <div><a href="">Scientific Content Analysis (SCAN)</a></div>
+            <div><a href="">The VIEW Question Questionnaire</a></div>
+            <div><a href="">News</a></div>
+            <div><a href="">Why Verify</a></div>
+            <div><a href="">Choosing a Screening Provider</a></div>
+            <div><a href="">FAQs</a></div>
+            <div><a href="">Privacy</a></div>
+            <div><a href="./aboutus.html">About Us</a></div>
+            <div><a href="">Contact Us</a></div>
+        </div>
+
+        <div class="menuFooter">
+
+        </div>
+
+    </div> 
+
+    <script>
+        let myMenuu = document.querySelector(".menubar");
+        myMenuu.addEventListener("click", onMenubarClicked);
+        function onMenubarClicked() {
+            let mymenu = document.querySelector(".menu");
+            mymenu.classList.toggle("menu-hide");
+            mymenu.classList.toggle("menu-show");
+        }
+
+       /*let myMenuExit = document.querySelector("");
+       myMenuExit.addEventListener('click', function handleClickOutsidemySidenav(event) { 
+            console.log('user clicked: ', event.target);
+            const mySidenav = myMenuExit.getElementById('mySidenav');
+    
+            if (!mySidenav.contains(event.target)) {
+                mySidenav.style.display = 'none';
+            }
+        }); */
+    </script>
 
     <!--Client Login-->
     <dialog id="login">
@@ -39,39 +95,6 @@
            </div>
         </div>
     </dialog>
-
-    <!--
-    <div class="menuout menuout-hide">
-        <div> <img class="menuimg" src="./images/imgplaceholder1.png" alt=""> </div>
-
-        <div class="menuAcc">
-            <img class="icon" src="./images/iconplaceholder.png" alt="">
-            <h3>Name</h3>
-            <p>username</p>
-            <div class="AccButton"><button><p>Account</p></button></div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="menuOpt">
-            <div><p>Home</p></div>
-            <div><p>Background Screening Services</p></div>
-            <div><p>Other Additional Services</p></div>
-            <div><p>Scientific Content Analysis (SCAN)</p></div>
-            <div><p>The VIEW Question Questionnaire</p></div>
-            <div><p>News</p></div>
-            <div><p>Why Verify</p></div>
-            <div><p>Choosing a Screening Provider</p></div>
-            <div><p>FAQs</p></div>
-            <div><p>Privacy</p></div>
-            <div><p>About Us</p></div>
-            <div><p>Contact Us</p></div>
-        </div>
-
-        <div class="menuFooter">
-        </div>
-    </div> -->
-
 
     <div class="hp slogan">
         <img src="./images/imgplaceholder1.png" alt="">
