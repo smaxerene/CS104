@@ -17,12 +17,58 @@
     </div>
 
     <div class="hp menupart">
-        <div> <img class="menubar" height="20px" src="./images/menu.png" alt=""> </div>
+        <div> <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="menubar" height="20px" src="./images/menu.png" alt=""/></span> </div>
         <div class="login"><button onclick="window.login.showModal()"> <p>Client Login</p> </button></div>
     </div>
 
-     <!--Client Login-->
-     <dialog id="login">
+      <!--Menubar Contents-->
+    <div id="mySidenav" class="menu sidenav">
+        <div> <img class="menuimg" src="./images/imgplaceholder1.png" alt=""> </div>
+
+        <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
+
+        <div class="menuAcc">
+            <img class="icon" height="130px" src="./images/iconplaceholder.png" alt="">
+            <h3>Name</h3>
+            <p>username</p>
+            <div class="AccButton"><button>Account</button></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="menuOpt">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="./services.html">Background Screening Service</a></div>
+            <div><a href="">Other Additional Services</a></div>
+            <div><a href="">Scientific Content Analysis (SCAN)</a></div>
+            <div><a href="">The VIEW Question Questionnaire</a></div>
+            <div><a href="">News</a></div>
+            <div><a href="">Why Verify</a></div>
+            <div><a href="">Choosing a Screening Provider</a></div>
+            <div><a href="">FAQs</a></div>
+            <div><a href="">Privacy</a></div>
+            <div><a href="./aboutus.html">About Us</a></div>
+            <div><a href="">Contact Us</a></div>
+        </div>
+
+        <div class="menuFooter">
+
+        </div>
+
+    </div> 
+
+    <script>
+       function openNav() {
+            document.getElementById("mySidenav").style.width = "320px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!--Client Login-->
+    <dialog id="login">
         <form method="dialog">
             <button class="exit">X</button>
         </form>
@@ -133,13 +179,13 @@
         </div>
     </div>
 
-    <div class="hpcontactus">
-
+    <div class="hp contactus">
+        <div><img src="./images/logoblack.png" alt=""></div>
+        <div><p>Social Media</p></div>
     </div>
 
     <div class="hp footer">
-        <div class=""></div>
-        <div class=""></div>
+        <div class=""><p>Personal Verification Ltd 2006 - 2023 © All rights reserved - site last updated April 2023</p></div>
     </div>
 </body>
 </html>

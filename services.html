@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Verification Limited</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.js">
+</head>
+<body>
+    <div class="hp logo">
+        <div> <img src="./images/logowhite.png" alt=""> </div>
+        <div> <h3>Personal Verification Limited</h3> </div>
+    </div>
+
+    <div class="hp menupart">
+        <div> <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="menubar" height="20px" src="./images/menu.png" alt=""/></span> </div>
+        <div class="login"><button onclick="window.login.showModal()"> <p>Client Login</p> </button></div>
+    </div>
+
+      <!--Menubar Contents-->
+    <div id="mySidenav" class="menu sidenav">
+        <div> <img class="menuimg" src="./images/imgplaceholder1.png" alt=""> </div>
+
+        <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
+
+        <div class="menuAcc">
+            <img class="icon" height="130px" src="./images/iconplaceholder.png" alt="">
+            <h3>Name</h3>
+            <p>username</p>
+            <div class="AccButton"><button>Account</button></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="menuOpt">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="./services.html">Background Screening Service</a></div>
+            <div><a href="">Other Additional Services</a></div>
+            <div><a href="">Scientific Content Analysis (SCAN)</a></div>
+            <div><a href="">The VIEW Question Questionnaire</a></div>
+            <div><a href="">News</a></div>
+            <div><a href="">Why Verify</a></div>
+            <div><a href="">Choosing a Screening Provider</a></div>
+            <div><a href="">FAQs</a></div>
+            <div><a href="">Privacy</a></div>
+            <div><a href="./aboutus.html">About Us</a></div>
+            <div><a href="">Contact Us</a></div>
+        </div>
+
+        <div class="menuFooter">
+
+        </div>
+
+    </div> 
+
+    <script>
+       function openNav() {
+            document.getElementById("mySidenav").style.width = "320px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!--Client Login-->
+    <dialog id="login">
+        <form method="dialog">
+            <button class="exit">X</button>
+        </form>
+
+        <div class = "clientLogin-wrapper">
+           <div><img class="iconLogin" src="./images/iconplaceholder.png" alt=""></div>
+           <div class="cltext">
+            <div><input type="text" placeholder="Username"></div>
+            <div><input type="text" placeholder="Password"></div>
+           </div>
+           <div class="clbuttons">
+            <div><button class="cllogin">Login</button></div>
+            <div><button class="clsignup">Sign Up</button></div>
+           </div>
+        </div>
+    </dialog>
+
+    <div class="auheading"> 
+        <h2>Background Screening Services</h2> 
+    </div>
+
+    <!--Verification Services-->
+    <button type="button" class="collapsible">Verification Services</button>
+    <div class="content">
+        <p>The PVL service is an incremental process.  It consists of increasing 
+        levels of enquiry which build upon one another to give the fullest possible 
+        picture of an applicant’s veracity.
+        <br><br>
+        All our reports include a written assessment of the information collected.
+        <br><br>    
+        &#x2022; We have put together the following packages, but you can also pick
+        and choose what checks you require, and pay only for those:
+        <br>
+        &#x2022; New Zealand Criminal and Driving convictions enquiry
+        <br>
+        &#x2022; New Zealand Criminal /Driving convictions enquiry and financial report
+        <br>
+        &#x2022; The on-line Integrity Test saves you time by quickly screening out 
+        unsuitable candidates right from the start, before you even consider their 
+        application for employment.
+        <br>
+        &#x2022; The Critical Enquiry reviews a candidate’s past and is essential.
+        <br>
+        &#x2022; The Integrity Enquiry includes both the on-line Integrity Test and 
+        the Critical Enquiry.
+        <br>
+        &#x2022; The Professional Enquiry is necessary if any kind of educational 
+        qualifications are required of the candidate, and crucial for applicants 
+        who have lived or worked overseas.
+        <br>
+        &#x2022; The Personal Enquiry is designed for those aspiring to positions 
+        in management and beyond.
+        <br>
+        &#x2022; Overseas enquiries - never a problem for us. Call for a quote</p>
+    </div>
+
+    <!--Critical Enquiry-->
+    <button type="button" class="collapsible">Critical Enquiry</button>
+    <div class="content">
+        <p>The purpose of this service is to verify the candidate’s identity, 
+            identify any criminal history, and confirm their financial probity.  
+            It is our most basic report and the first step in the verification process.
+            <br><br>
+            For this report we conduct a search of New Zealand Government 
+            records and commercial databases, and include the following 
+            disclosable information:
+            <br><br>
+            &#x2022; Identity verification
+            <br>
+            &#x2022; Criminal Record
+            <br>
+            &#x2022; Driving Conviction Record
+            <br>
+            &#x2022; Driver Licence Status (conditions & restrictions) / or 
+            authentication of NZ Passport (depends on which ID is supplied)
+            <br>
+            &#x2022; Employment History (last two employers)
+            <br>
+            &#x2022; Immigration Status (entitlement to work in NZ)
+            <br>
+            &#x2022; Financial Report - adverse financial history that might 
+            have a bearing on the candidate’s suitability for employment, 
+            including defaults, collections, No Asset Procedure, judgments or 
+            bankruptcies. (A history of financial responsibility may be a good 
+            indicator of reliability and responsibility in other areas of life).
+            <br>
+            &#x2022; Unpaid court fines, reparations and offender levies.
+            <br><br>
+            This report is designed for entry level positions or those that do 
+            not require formal qualifications.  It is suitable in circumstances 
+            where the employee will be engaged in duties that involve regular 
+            day-to-day contact with the public and/or limited financial responsibility.
+            <br><br>
+            On its own, the value of this report is limited by its historical 
+            reference and it is rarely useful for overseas applicants or those 
+            who have only lived in New Zealand for a short time because these 
+            individuals are unlikely to feature significantly in New Zealand 
+            databases and records. 
+            <br><br>
+            For overseas applicants, PVL recommends the Professional Enquiry 
+            as it extends to offshore databases and public records.</p>
+    </div>
+
+    <!--Integrity Enquiry-->
+    <button type="button" class="collapsible">Integrity Test</button>
+    <div class="content">
+        <p>The purpose of this service is to assess the Candidate’s attitudes 
+            and behaviour with respect to honesty. The Critical Enquiry reports 
+            on historical records and therefore will only give an indication of 
+            a candidate’s possible behaviour, based on their known and recorded past. 
+            <br><br>
+            The Integrity Enquiry is considered to be a key element of any verification 
+            because its scope is much wider and a more comprehensive prediction of 
+            future behaviour is possible. 
+            <br><br>
+            Our Integrity Enquiry includes all the research offered in the Critical Enquiry:
+            <br><br>
+            &#x2022; Identity verification
+            <br>
+            &#x2022; Criminal Record
+            <br>
+            &#x2022; riving Conviction Record
+            <br>
+            &#x2022; Driver Licence Status (conditions & restrictions) / 
+            or authentication of NZ Passport (depends on which ID is supplied)
+            <br>
+            &#x2022; Employment History (last two employers)
+            <br>
+            &#x2022; Immigration Status (entitlement to work in NZ)
+            <br>
+            &#x2022; Financial Report
+            <br>
+            &#x2022; Unpaid Court fines, reparations & offender levies
+            <br>
+            <b>Plus</b>The Integrity Test
+            <br><br>
+            Our Integrity Test predicts an individual’s propensity towards 
+            inappropriate job behaviour in relation to the following 
+            constructs:
+            <br><br>
+            &#x2022; Theft
+            <br>
+            &#x2022; Bribery
+            <br>
+            &#x2022; Gambling
+            <br>
+            &#x2022; Substance Abuse
+            <br>
+            &#x2022; Loyalty
+            <br>
+            &#x2022; Accountability
+            <br><br>
+            The questionnaire is a non-invasive computer generated test. 
+            It is fully automated and engages candidates in a series of 
+            predetermined questions. 
+            <br><br>
+            Responses are measured by means of progressive technology that
+            detects attempts at distortion, impression management and other 
+            countermeasures. 
+            <br><br>
+            <b>This test has a very high validity of 0.92 in comparative testing 
+            with polygraph examinations</b> on each of the above constructs. You 
+            can administer this test in your own office and receive the results 
+            in less than a day.
+            <br><br>
+            The test takes 15-25 minutes to complete.
+            <br><br>
+            This Integrity Test is in use around the world with more than 12,000 
+            administered every month for pre employment screening purposes. Only 
+            PVL can offer this test in New Zealand, and the Asia-Pacific region.
+            <br><br>
+            In the event that the candidate is not available to undertake the test 
+            (i.e. living overseas or an out-of-town applicant) then we can send them a 
+            written questionnaire to complete. The answers provide us with an opportunity 
+            to subject the candidate’s language to Scientific Content Analysis (SCAN). 
+            <br><br>
+            To learn why our Integrity Test has recently become such an essential 
+            employment screening tool - Read here.
+            <br><br><br>
+            <b>Integrity Test Only</b>
+            <br>
+            You can purchase the Integrity Test on its own.
+            <br><br>
+            The test saves you time by quickly screening out unsuitable 
+            candidates right from the start, before you even consider their 
+            application for employment.
+            <br><br>
+            If you later request either of our Integrity, Professional or 
+            Personal Enquiries for the applicant we will waive this fee and only 
+            invoice you for the specific screening package you request.
+            <br><br>
+            Many of our clients are using this test because of the delay in the 
+            Ministry of Justice processing criminal records checks (as much as a month).
+            <br><br>
+            If you can't afford to wait a month, this test will give you reassurance 
+            about your hiring decision, while we wait for the results of the criminal 
+            records check to be returned to us</p>
+            <br><br>
+    </div>
+
+    <!--Professional Enquiry-->
+    <button type="button" class="collapsible">Professional Enquiry</button>
+    <div class="content">
+        <p>The purpose of this service is to confirm the candidate’s educational
+            qualifications and professional credentials,  to investigate any 
+            disciplinary proceedings that may have been heard or are pending and also 
+            to undertake a comprehensive search of international publicly available databases 
+            to verify the Candidate’s probity.
+            <br><br>
+            For this report,  in addition to ascertaining validity,  we pay particular 
+            attention to continuity,  as continuity,  or more precisely the lack of it,  
+            can offer valuable clues as to other avenues of inquiry that may need to be pursued. 
+            <br><br>
+            &#x2022; We confirm the candidate’s educational qualifications;
+            <br>
+            &#x2022; We verify the candidate’s professional registrations;
+            <br>
+            &#x2022; We investigate any disciplinary proceedings instituted by a professional 
+            regulatory body that may have been heard,  or are pending;
+            <br>
+            &#x2022; We examine the records of the Insolvency and Trustee Service to confirm the 
+            candidate has not been banned in New Zealand from being a Manager or Director of a 
+            company.  If there has been a ban,  we investigate the circumstances which led to it 
+            and the duration of the prohibition.
+            <br>
+            &#x2022; We cross reference the candidate’s name with international databases, 
+            including law enforcement records, criminal records, records of violence, sex crimes, 
+            crimes of dishonesty, diploma mills and unaccredited universities (largest database in 
+            the world), database of employers willing to issue false documentation to employees, 
+            banned companies, global terrorist databases and US Government foreign asset control 
+            databases.
+            <br>
+            &#x2022; We also conduct a search of international media reports.  Sixty percent of the 
+            content in this database, which comprises more than 15,000 newspapers and magazine, is 
+            not available on the free web.
+            <br><br>
+            This enquiry is important for positions where tertiary qualifications are required,  
+            it is particularly relevant for overseas applicants as investigations extend to foreign 
+            public records and databases,  and it is especially suited to positions in management.
+            <br><br>
+            The Professional enquiry report also includes all the employment screening enquiries 
+            listed in our Critical and Integrity enquiry services, i.e.
+            <br><br>
+            &#x2022; Identity verification
+            <br>
+            &#x2022; Criminal Record
+            <br>
+            &#x2022; Driving Conviction Record
+            <br>
+            &#x2022; Driver Licence Status (conditions & restrictions) / or authentication of NZ 
+            Passport (depends on which ID is supplied)
+            <br>
+            &#x2022; Employment History (last two employers - anywhere in the world!)
+            <br>
+            &#x2022; Immigration Status (entitlement to work in NZ)
+            <br>
+            &#x2022; Financial Report
+            <br>
+            &#x2022; PPSR Report
+            <br><br>
+            And the Integrity Test for predicting propensity towards inappropriate job behaviour 
+            in relation to:
+            <br><br>
+            &#x2022; Theft
+            <br>
+            &#x2022; Bribery
+            <br>
+            &#x2022; Gambling
+            <br>
+            &#x2022; Substance abuse
+            <br>
+            &#x2022; Loyalty
+            <br>
+            &#x2022; Accountability
+        </p>
+    </div>
+
+    <!--Personal Enquiry-->
+    <button type="button" class="collapsible">Personal Enquiry</button>
+    <div class="content">
+        <p>The purpose of this enquiry is to focus on the candidate’s character.  
+            We are looking for specific and conclusive evidence of honesty,  integrity,  
+            reliability and trustworthiness.
+            <br><br>
+            For this report we interview a minimum of two referees,  in person wherever 
+            possible.  It is our experience that useful meaningful information can rarely 
+            be acquired without personal face-to-face interviews.  However we recognise 
+            that each case has to be considered individually and there may be constraints,  
+            such as cost and the accessibility of referees,  which mean compromises have to 
+            be made.  The more interviews we conduct the more extensive the investigation but 
+            we would not recommend more than four unless the earlier interviews brought to 
+            light an issue requiring further investigation.
+            <br><br>
+            Based on the results of the interviews,  we may recommend a personal interview 
+            and/or ask that the applicant complete a statement to be subjected to SCAN 
+            analysis.
+            <br><br>
+            In addition,  we search Government databases to see if the Candidate might have 
+            any conflicts of interest through their recorded involvement in other companies.
+            <br><br>
+            This enquiry is recommended for managerial, executive and board appointments, 
+            especially where the role carries fiscal responsibilities and legal liabilities.
+            <br><br>
+            The Professional enquiry report also includes all the employment screening 
+            enquiries listed in our Critical, Integrity and Professional enquiry services, 
+            i.e.
+            <br><br>
+            &#x2022; Identity verification
+            <br>
+            &#x2022; Criminal Record
+            <br>
+            &#x2022; Driving Conviction Record
+            <br>
+            &#x2022; Driver Licence Status (conditions & restrictions)
+            <br>
+            &#x2022; Employment History (last two employers - anywhere in the world!)
+            <br>
+            &#x2022; Driver Licence Status (conditions & restrictions) / or authentication 
+            of NZ Passport (depends on which ID is supplied)
+            <br>
+            &#x2022; Financial Report
+            <br>
+            &#x2022; Unpaid Court fines, reparations & offender levies
+            <br>
+            &#x2022; PPSR Report
+            <br>
+            &#x2022; Educational qualifications verification - anywhere in the world!
+            <br>
+            &#x2022; Immigration Status (entitlement to work in NZ)
+            <br>
+            &#x2022; Professional registration enquiry
+            <br>
+            &#x2022; Professional disciplinary proceedings
+            <br>
+            &#x2022; Banned director or manager search in New Zealand
+            <br>
+            &#x2022; Search of international databases for criminal, corruption or fraud 
+            activity (170 million records)
+            <br>
+            &#x2022; Search of international media reports (15,000 newspapers and magazines)
+            <br><br>
+            And the Integrity Test for predicting propensity towards inappropriate job 
+            behaviour in relation to:
+            <br><br>
+            &#x2022; Theft
+            <br>
+            &#x2022; Bribery
+            <br>
+            &#x2022; Gambling
+            <br>
+            &#x2022; Substance abuse
+            <br>
+            &#x2022; Loyalty
+            <br>
+            &#x2022; Accountability</p>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+    <div class="hp contactus">
+        <div><img src="./images/logoblack.png" alt=""></div>
+        <div><p>Social Media</p></div>
+    </div>
+
+    <div class="hp footer">
+        <div class=""><p>Personal Verification Ltd 2006 - 2023 © All rights reserved - site last updated April 2023</p></div>
+    </div>
+</body>
+</html>

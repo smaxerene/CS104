@@ -17,15 +17,15 @@
     </div>
 
     <div class="hp menupart">
-        <div> <img class="menubar" height="20px" src="./images/menu.png" alt=""/> </div>
+        <div> <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="menubar" height="20px" src="./images/menu.png" alt=""/></span> </div>
         <div class="login"><button onclick="window.login.showModal()"> <p>Client Login</p> </button></div>
     </div>
 
       <!--Menubar Contents-->
-    <div id="mySidenav" class="menu menu-hide">
+    <div id="mySidenav" class="menu sidenav">
         <div> <img class="menuimg" src="./images/imgplaceholder1.png" alt=""> </div>
 
-        <div class="back"><img height="30px" src="./images/back.png" alt=""></div>
+        <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
 
         <div class="menuAcc">
             <img class="icon" height="130px" src="./images/iconplaceholder.png" alt="">
@@ -38,7 +38,7 @@
 
         <div class="menuOpt">
             <div><a href="./index.html">Home</a></div>
-            <div><a href="">Background Screening Service</a></div>
+            <div><a href="./services.html">Background Screening Service</a></div>
             <div><a href="">Other Additional Services</a></div>
             <div><a href="">Scientific Content Analysis (SCAN)</a></div>
             <div><a href="">The VIEW Question Questionnaire</a></div>
@@ -58,23 +58,13 @@
     </div> 
 
     <script>
-        let myMenuu = document.querySelector(".menubar");
-        myMenuu.addEventListener("click", onMenubarClicked);
-        function onMenubarClicked() {
-            let mymenu = document.querySelector(".menu");
-            mymenu.classList.toggle("menu-hide");
-            mymenu.classList.toggle("menu-show");
+       function openNav() {
+            document.getElementById("mySidenav").style.width = "320px";
         }
 
-       /*let myMenuExit = document.querySelector("");
-       myMenuExit.addEventListener('click', function handleClickOutsidemySidenav(event) { 
-            console.log('user clicked: ', event.target);
-            const mySidenav = myMenuExit.getElementById('mySidenav');
-    
-            if (!mySidenav.contains(event.target)) {
-                mySidenav.style.display = 'none';
-            }
-        }); */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
 
     <!--Client Login-->

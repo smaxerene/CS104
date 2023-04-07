@@ -19,6 +19,11 @@ h3 {
      font-family: myFirstFont;
 }
 
+h2 {
+    font-family: myFirstFont;
+    font-size: 20px;
+}
+
 h4 {
     font-family: mySecondFont;
     margin-left: 25px; 
@@ -157,28 +162,20 @@ p {
 }
     
 .menuimg {
-    max-width: 77vw;
+    max-width: 100%;
     max-height: auto;
 }
     
 .menu {
     background-color: white;
-    height: 125vh;
-    width: 300px;
-    position: absolute;
+    height: 100%;
+    width: 0;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 1;
     transition: 1s;
-    transition-timing-function: ease-out;
-}
-    
-.menu-hide {
-    transform: translate(-100%, 0);
-}
-    
-.menu-show {
-    transform: translate(0, 0);
+    overflow-x: hidden; 
 }
 
 .back {
@@ -187,9 +184,9 @@ p {
     margin: 10px;
 }
 
-/*.sidenav a:hover {
+.sidenav a:hover {
     color: #f1f1f1;
-} */
+} 
     
 .menuAcc {
     display: flex;
@@ -375,4 +372,29 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/*services.html*/
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
 }
