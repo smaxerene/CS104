@@ -18,7 +18,7 @@
 
     <div class="hp menupart">
         <div> <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="menubar" height="20px" src="./images/menu.png" alt=""/></span> </div>
-        <div class="login"><button onclick="window.login.showModal()"> <p>Client Login</p> </button></div>
+        <div class="login"><button onclick="window.login.showModal()"> <p>Client Login </p></button></div>
     </div>
 
       <!--Menubar Contents-->
@@ -87,11 +87,9 @@
     </dialog>
 
     <div class="hp slogan">
-        <img src="./images/imgplaceholder1.png" alt="">
-        <p class="sloganText">New Zealand's only full-time independent Background Screening company</p>
+        <img src="./images/bgcheck.jpg" alt="">
+        <p class="sloganText">New Zealand's only full-time Independent Background Screening company</p>
     </div>
-
-    <div class="divider"></div>
 
     <div class="hp promotion1">
         <h4>PVL is New Zealand’s most qualified employment background screening company for: </h4>
@@ -100,13 +98,9 @@
         <div class="promButton"><button>Find Out More</button></div>
     </div>
 
-    <div class="divider"></div>
-
     <div class="hp video">
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI"> </iframe>    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LrIHLOX0NwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
     </div>
-
-    <div class="divider"></div>
 
     <div class="hp promotion2">
         <h4>What We Can Offer You</h4>
@@ -123,32 +117,122 @@
         <div class="promButton"><button>Find Out More</button></div>
     </div>
 
-    <div class="divider"></div>
-
     <div class="hp promotionpic">
-        <img src="./images/imgplaceholder2.png" alt="">
+        <img src="./images/promotion.png" alt="">
     </div>
 
-    <div class="divider"></div>
+    <div class="hp slideshow-container">
+        <div class="mySlides">
+            <h4>Review 1</h4>
+            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
+            <p class="author">- Customer</p>
+        </div>
 
-    <div class="hp reviews"></div>
+        <div class="mySlides">
+            <h4>Review 2</h4>
+            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
+            <p class="author">- Customer</p>
+        </div>
 
-    <div class="divider"></div>
+        <div class="mySlides">
+            <h4>Review 3</h4>
+            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
+            <p class="author">- Customer</p>
+        </div>
+
+        <div class="mySlides">
+            <h4>Review 4</h4>
+            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
+            <p class="author">- Customer</p>
+        </div>
+
+        <div class="mySlides">
+            <h4>Review 5</h4>
+            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
+            <p class="author">- Customer</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+        window.onload= function () {
+        setInterval(function(){ 
+        plusSlides(1);
+        }, 3000);
+        }
+    </script>
 
     <div class="hp contact">
         <h4>Don’t hesitate to ask – We are here to help our clients solve their problems.</h4>
         <p>You can contact us anytime.  If we are not immediately available, 
             please leave a message.  You can be assured of a prompt response. <br><br></p>
-        <div>  <input type="text" placeholder="Name"> </div>
-        <div>  <input type="text" placeholder="Phone Number"> </div>
-        <div>  <input type="text" placeholder="Email"> </div>
-        <div> <input type="text" placeholder="Message"> </div>
+        <div> <input type="text" placeholder="Name"> </div>
+        <div> <input type="text" placeholder="Phone Number"> </div>
+        <div> <input type="text" placeholder="Email"> </div>
+        <div> <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea> </div>
         <div class="send"> <button><p>Send Message</p></button> </div>
     </div>
 
     <div class="hp contactus">
-        <div><img src="./images/logoblack.png" alt=""></div>
-        <div><p>Social Media</p></div>
+        <div class="contactuslogo">
+            <img style="height: 50px;" src="./images/logoblack.png" alt="">
+            <h3>Personal Verification Limited</h3>
+        </div>
+        <div class="contactusDeats">
+            <div>
+                <p>
+                    <b>Address:</b> 3 Sackville Street, Grey Lynn, Auckland 1021, NEW ZEALAND
+                    <br><br>
+                    <b>Telephone: </b> (64) + (9) 359 9050
+                    <br><br>
+                    <b>Email: </b> info@verify.co.nz
+                </p>
+            </div>
+        </div>
+        <div class="contactUsSNS">
+            <div><h3>Social Media</h3></div>
+            <div>
+                <img src="./images/facebook.png" alt="">
+                <img src="./images/youtube.png" alt="">
+                <img src="./images/instagram.png" alt="">
+            </div>
+        </div>
     </div>
 
     <div class="hp footer">
