@@ -22,19 +22,19 @@
     </div>
 
       <!--Menubar Contents-->
-    <div id="mySidenav" class="menu sidenav">
-        <div> <img class="menuimg" src="./images/imgplaceholder1.png" alt=""> </div>
+    <div id="mySidenav" class="menu sidenav menu-hide">
+        <div class="menulogo"><img class="menuimg" style="height:70px;" src="./images/logowhite.png" alt=""></div>
 
         <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
 
         <div class="menuAcc">
-            <img class="icon" height="130px" src="./images/iconplaceholder.png" alt="">
-            <h3>Name</h3>
-            <p>username</p>
+            <div><img class="icon" height="130px" src="./images/iconplaceholder1.png" alt=""></div>
+            <div><h3>Name</h3></div>
+            <div><p>username</p></div>
             <div class="AccButton"><button>Account</button></div>
         </div>
 
-        <div class="divider"></div>
+        <div class="menudivider"></div>
 
         <div class="menuOpt">
             <div><a href="./index.html">Home</a></div>
@@ -48,22 +48,23 @@
             <div><a href="">FAQs</a></div>
             <div><a href="">Privacy</a></div>
             <div><a href="./aboutus.html">About Us</a></div>
-            <div><a href="">Contact Us</a></div>
+            <div><a href="./contactus.html">Contact Us</a></div>
         </div>
 
-        <div class="menuFooter">
-
+        <div class="menufooter">
+            <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b> © All rights reserved - site last updated April 2023</p></div>
         </div>
 
     </div> 
 
     <script>
        function openNav() {
-            document.getElementById("mySidenav").style.width = "320px";
+           document.getElementById("mySidenav").classList.remove("menu-hide");
+
         }
 
         function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav").classList.add("menu-hide");
         }
     </script>
 
@@ -125,31 +126,31 @@
         <div class="mySlides">
             <h4>Review 1</h4>
             <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
-            <p class="author">- Customer</p>
+            <p class="author">- Customer 1</p>
         </div>
 
         <div class="mySlides">
             <h4>Review 2</h4>
             <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
-            <p class="author">- Customer</p>
+            <p class="author">- Customer 2</p>
         </div>
 
         <div class="mySlides">
             <h4>Review 3</h4>
             <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
-            <p class="author">- Customer</p>
+            <p class="author">- Customer 3</p>
         </div>
 
         <div class="mySlides">
             <h4>Review 4</h4>
             <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
-            <p class="author">- Customer</p>
+            <p class="author">- Customer 4</p>
         </div>
 
         <div class="mySlides">
             <h4>Review 5</h4>
             <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</q>
-            <p class="author">- Customer</p>
+            <p class="author">- Customer 5</p>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -202,41 +203,35 @@
         <h4>Don’t hesitate to ask – We are here to help our clients solve their problems.</h4>
         <p>You can contact us anytime.  If we are not immediately available, 
             please leave a message.  You can be assured of a prompt response. <br><br></p>
-        <div> <input type="text" placeholder="Name"> </div>
+        <div class="inpname"> <input  type="text" placeholder="Name"> </div>
         <div> <input type="text" placeholder="Phone Number"> </div>
         <div> <input type="text" placeholder="Email"> </div>
         <div> <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea> </div>
         <div class="send"> <button><p>Send Message</p></button> </div>
     </div>
 
-    <div class="hp contactus">
-        <div class="contactuslogo">
-            <img style="height: 50px;" src="./images/logoblack.png" alt="">
-            <h3>Personal Verification Limited</h3>
-        </div>
-        <div class="contactusDeats">
-            <div>
-                <p>
-                    <b>Address:</b> 3 Sackville Street, Grey Lynn, Auckland 1021, NEW ZEALAND
-                    <br><br>
-                    <b>Telephone: </b> (64) + (9) 359 9050
-                    <br><br>
-                    <b>Email: </b> info@verify.co.nz
-                </p>
-            </div>
-        </div>
-        <div class="contactUsSNS">
-            <div><h3>Social Media</h3></div>
-            <div class="SNS">
-                <img src="./images/facebook.png" alt="">
-                <img src="./images/youtube.png" alt="">
-                <img src="./images/instagram.png" alt="">
-            </div>
-        </div>
-    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
 
     <div class="hp footer">
-        <div class=""><p>Personal Verification Ltd 2006 - 2023 © All rights reserved - site last updated April 2023</p></div>
+        <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b>© All rights reserved - site last updated April 2023</p></div>
     </div>
         
 </body>

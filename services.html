@@ -20,19 +20,19 @@
     </div>
 
       <!--Menubar Contents-->
-    <div id="mySidenav" class="menu sidenav">
-        <div> <img class="menuimg" src="./images/imgplaceholder1.png" alt=""> </div>
+    <div id="mySidenav" class="menu sidenav" style="width:0px;">
+        <div class="menulogo"><img class="menuimg" style="height:70px;" src="./images/logowhite.png" alt=""></div>
 
         <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
 
         <div class="menuAcc">
-            <img class="icon" height="130px" src="./images/iconplaceholder.png" alt="">
-            <h3>Name</h3>
-            <p>username</p>
+            <div><img class="icon" height="130px" src="./images/iconplaceholder1.png" alt=""></div>
+            <div><h3>Name</h3></div>
+            <div><p>username</p></div>
             <div class="AccButton"><button>Account</button></div>
         </div>
 
-        <div class="divider"></div>
+        <div class="menudivider"></div>
 
         <div class="menuOpt">
             <div><a href="./index.html">Home</a></div>
@@ -46,11 +46,11 @@
             <div><a href="">FAQs</a></div>
             <div><a href="">Privacy</a></div>
             <div><a href="./aboutus.html">About Us</a></div>
-            <div><a href="">Contact Us</a></div>
+            <div><a href="./contactus.html">Contact Us</a></div>
         </div>
 
-        <div class="menuFooter">
-
+       <div class="menufooter">
+            <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b> © All rights reserved - site last updated April 2023</p></div>
         </div>
 
     </div> 
@@ -98,7 +98,7 @@
         <br><br>
         All our reports include a written assessment of the information collected.
         <br><br>    
-        &#x2022; We have put together the following packages, but you can also pick
+        We have put together the following packages, but you can also pick
         and choose what checks you require, and pay only for those:
         <br>
         &#x2022; New Zealand Criminal and Driving convictions enquiry
@@ -172,7 +172,7 @@
     </div>
 
     <!--Integrity Enquiry-->
-    <button type="button" class="collapsible">Integrity Test</button>
+    <button type="button" class="collapsible">Integrity Enquiry</button>
     <div class="content">
         <p>The purpose of this service is to assess the Candidate’s attitudes 
             and behaviour with respect to honesty. The Critical Enquiry reports 
@@ -201,8 +201,8 @@
             &#x2022; Financial Report
             <br>
             &#x2022; Unpaid Court fines, reparations & offender levies
-            <br>
-            <b>Plus</b>The Integrity Test
+            <br><br>
+            <b>Plus</b> The Integrity Test
             <br><br>
             Our Integrity Test predicts an individual’s propensity towards 
             inappropriate job behaviour in relation to the following 
@@ -442,34 +442,28 @@
         }
     </script>
 
-<div class="hp contactus">
-    <div class="contactuslogo">
-        <img style="height: 50px;" src="./images/logoblack.png" alt="">
-        <h3>Personal Verification Limited</h3>
-    </div>
-    <div class="contactusDeats">
-        <div>
-            <p>
-                <b>Address:</b> 3 Sackville Street, Grey Lynn, Auckland 1021, NEW ZEALAND
-                <br><br>
-                <b>Telephone: </b> (64) + (9) 359 9050
-                <br><br>
-                <b>Email: </b> info@verify.co.nz
-            </p>
-        </div>
-    </div>
-    <div class="contactUsSNS">
-        <div><h3>Social Media</h3></div>
-        <div class="SNS">
-            <img src="./images/facebook.png" alt="">
-            <img src="./images/youtube.png" alt="">
-            <img src="./images/instagram.png" alt="">
-        </div>
-    </div>
-</div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
 
     <div class="hp footer">
-        <div class=""><p>Personal Verification Ltd 2006 - 2023 © All rights reserved - site last updated April 2023</p></div>
+        <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b> © All rights reserved - site last updated April 2023</p></div>
     </div>
 </body>
 </html>

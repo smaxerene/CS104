@@ -13,6 +13,17 @@ body {
     min-height: 100vh;
     margin: 0;
     flex-direction: column;
+    background-color: #f1f1f1;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+   color: #000000;
 }
 
 h3 {
@@ -28,8 +39,9 @@ h4 {
     font-family: mySecondFont;
     margin-left: 25px; 
     margin-right: 25px; 
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
+
 }
 
 p {
@@ -39,6 +51,7 @@ p {
     text-align: justify;
     text-justify: inter-word;
     color: #4D4D4D;
+    max-width: 90vw;
 }
     
 .hp {
@@ -124,7 +137,9 @@ p {
     box-sizing: border-box;
     width: 228px;
     height: 33px;
-    border: 2px solid #000000;
+
+    background: white;
+    border: 1px solid #000000;
     border-radius: 3px;
     text-align: center;
 }
@@ -163,20 +178,20 @@ p {
 }
     
 .menuimg {
-    max-width: 100%;
-    max-height: auto;
+    max-width: 100vw;
+    max-height: 500px;
 }
     
 .menu {
-    background-color: white;
+    background-color: #DCE6F0;
     height: 100%;
-    width: 0;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     transition: 1s;
     overflow-x: hidden; 
+    width: 80%;
 }
 
 .back {
@@ -185,15 +200,48 @@ p {
     margin: 10px;
 }
 
+.menu-hide {
+    transform: translateX(-100%);
+}
+
+
 .sidenav a:hover {
     color: #f1f1f1;
 } 
-    
+
+.menulogo {
+    display: flex;
+    background-color: #38618C;
+    align-items: center;
+}
+
+.menulogo > img {
+    padding: 10px;
+    align-items: center;
+}
+   
 .menuAcc {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;;
+}
+
+.menuAcc > div > h3, .menuAcc > div > p {
+    margin: 0 auto;
+}
+
+.menuAcc > div > h3 {
+    padding-top: 10px;
+}
+
+.menuAcc > div > p {
+    padding-bottom: 15px;
+}
+
+.menudivider {
+    border-top: 1px solid #979797;
+    margin: 15px;
+    padding-bottom: 5px;
 }
 
 .menuOpt {
@@ -202,28 +250,40 @@ p {
 }
 
 .menuOpt > div {
+    border: outset;
     background-color: #80A1C3;
-    margin-top: 5px;
     padding: 10px;
 }
 
 .menuOPt > div > a {
-    color: #000000;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
+    text-decoration: none;
     color: #818181;
     display: block;
     transition: 0.3s;
 }
 
-.menuOPt > div > a:hover {
-    color: #f1f1f1;
+.menuOPt > div > a {
+    height: 18px;
 }
 
-.menuFooter {
-    background-color: #80A1C3;
+
+.menuOPt > div > a:hover {
+    font-size: 25px;
+    color: #f1f1f1;
+    margin: 0;
+}
+
+.menufooter {
+    background-color: #38618C;
+    margin: 0;
 }
     
+.menufooter > div > p {
+    color: white;
+    padding: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .icon {
     min-width: 10vw;
 }
@@ -266,9 +326,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     background-color: #DCE6F0;
+}
+
+.promotion1 > h4, .promotion2 > h4 {
+    margin-bottom: 0px;
 }
     
 .promButton > button, .AccButton > button {
@@ -376,6 +439,19 @@ q {
     margin: 5px;
 }
 
+.contact > h4 {
+    margin-bottom: 0px;
+}
+
+.contact > p {
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.contact > .inpname {
+    margin-top: 0px;
+}
+
 .contact > div > input {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
@@ -383,7 +459,7 @@ q {
     height: 31px;
     left: 35px;
     top: 1929px;
-    background: white;
+    background: whitesmoke;
     border: 0.5px solid #000000;
     border-radius: 3px;
 }
@@ -395,12 +471,10 @@ q {
     height: 114px;
     left: 35px;
     top: 2050px;
-    background: white;
+    background: whitesmoke;
     border: 0.5px solid #000000;
     border-radius: 3px;
 }
-
-
     
 .send > button {
     margin: 10px;
@@ -455,6 +529,28 @@ q {
     color: white;
 }
     
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+
 /*aboutus.html*/
 .au {
     display: flex;
@@ -494,6 +590,7 @@ q {
     
 .genevieve {
     margin-top: 45px;
+    padding-bottom: 40px;
 }
     
 .craig > div, .genevieve > div {
@@ -509,23 +606,35 @@ q {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-/*services.html*/
+.auinfo > div > h3 {
+    margin-bottom: 5px;
+}
 
+.auinfo > div > p {
+    margin-top: 0px;
+}
+
+
+/*services.html*/
 .collapsible {
-    background-color: #777;
-    color: white;
+    background-color: #DCE6F0;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
-    text-align: left;
+    height: 80px;
+    border: outset;
+    text-align: center;
     outline: none;
     font-size: 17px;
 }
 
 .active, .collapsible:hover {
+    color: white;
     background-color: #555;
 }
   
@@ -535,3 +644,10 @@ q {
     overflow: hidden;
     background-color: #f1f1f1;
 }
+
+.collapsible button {
+    color: black;
+}
+
+
+/*contactus.html*/

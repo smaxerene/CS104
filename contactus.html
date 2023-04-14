@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Verification Ltd</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.js">
+</head>
+<body>
+    <div class="hp logo">
+        <div> <img src="./images/logowhite.png" alt=""> </div>
+        <div> <h3>Personal Verification Limited</h3> </div>
+    </div>
+
+    <div class="hp menupart">
+        <div> <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="menubar" height="20px" src="./images/menu.png" alt=""/></span> </div>
+        <div class="login"><button onclick="window.login.showModal()"> <p>Client Login </p></button></div>
+    </div>
+
+      <!--Menubar Contents-->
+    <div id="mySidenav" class="menu sidenav" style="width:0px;">
+        <div class="menulogo"><img class="menuimg" style="height:70px;" src="./images/logowhite.png" alt=""></div>
+
+        <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
+
+        <div class="menuAcc">
+            <div><img class="icon" height="130px" src="./images/iconplaceholder1.png" alt=""></div>
+            <div><h3>Name</h3></div>
+            <div><p>username</p></div>
+            <div class="AccButton"><button>Account</button></div>
+        </div>
+
+        <div class="menudivider"></div>
+
+        <div class="menuOpt">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="./services.html">Background Screening Service</a></div>
+            <div><a href="">Other Additional Services</a></div>
+            <div><a href="">Scientific Content Analysis (SCAN)</a></div>
+            <div><a href="">The VIEW Question Questionnaire</a></div>
+            <div><a href="">News</a></div>
+            <div><a href="">Why Verify</a></div>
+            <div><a href="">Choosing a Screening Provider</a></div>
+            <div><a href="">FAQs</a></div>
+            <div><a href="">Privacy</a></div>
+            <div><a href="./aboutus.html">About Us</a></div>
+            <div><a href="./contactus.html">Contact Us</a></div>
+        </div>
+
+        <div class="menufooter">
+            <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b> © All rights reserved - site last updated April 2023</p></div>
+        </div>
+
+    </div> 
+
+    <script>
+       function openNav() {
+            document.getElementById("mySidenav").style.width = "320px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!--Client Login-->
+    <dialog id="login">
+        <form method="dialog">
+            <button class="exit">X</button>
+        </form>
+
+        <div class = "clientLogin-wrapper">
+           <div><img class="iconLogin" src="./images/iconplaceholder.png" alt=""></div>
+           <div class="cltext">
+            <div><input type="text" placeholder="Username"></div>
+            <div><input type="text" placeholder="Password"></div>
+           </div>
+           <div class="clbuttons">
+            <div><button class="cllogin">Login</button></div>
+            <div><button class="clsignup">Sign Up</button></div>
+           </div>
+        </div>
+    </dialog>
+
+    <div class="auheading"> 
+        <img src="./images/bgcheck-copy.jpeg" alt="">
+        <h2 class="auheadingtext">CONTACT US</h2> 
+    </div>
+
+    <div class="hp contact">
+        <h4>Don’t hesitate to ask – We are here to help our clients solve their problems.</h4>
+        <p>You can contact us anytime.  If we are not immediately available, 
+            please leave a message.  You can be assured of a prompt response. <br><br></p>
+        <div class="inpname"> <input  type="text" placeholder="Name"> </div>
+        <div> <input type="text" placeholder="Phone Number"> </div>
+        <div> <input type="text" placeholder="Email"> </div>
+        <div> <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea> </div>
+        <div class="send"> <button><p>Send Message</p></button> </div>
+    </div>
+
+    <div class="hp contactus">
+        <div class="contactuslogo">
+            <img style="height: 50px;" src="./images/logoblack.png" alt="">
+            <h3>Personal Verification Limited</h3>
+        </div>
+        <div class="contactusDeats">
+            <div>
+                <p>
+                    <b>Address:</b> 3 Sackville Street, Grey Lynn, Auckland 1021, NEW ZEALAND
+                    <br><br>
+                    <b>Telephone: </b> (64) + (9) 359 9050
+                    <br><br>
+                    <b>Email: </b> info@verify.co.nz
+                </p>
+            </div>
+        </div>
+        <div class="contactUsSNS">
+            <div><h3>Social Media</h3></div>
+            <div class="SNS">
+                <img src="./images/facebook.png" alt="">
+                <img src="./images/youtube.png" alt="">
+                <img src="./images/instagram.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="hp footer">
+        <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b> © All rights reserved - site last updated April 2023</p></div>
+    </div>
+
+    
+</body>
+</html>
