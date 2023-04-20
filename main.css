@@ -307,11 +307,13 @@ q {
     flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
+    justify-content: center;
 }
 
 .slogan img {
     max-width: 100vw;
     filter: contrast(25%);
+    justify-content: center;
 }
 
 .sloganText {
@@ -356,9 +358,17 @@ q {
     align-items: center;
  }
 
+ .promotionpic {
+    justify-content: center;
+ }
+
 .promotionpic > img {
     max-width: 100vw;
     max-height: 80vh;
+}
+
+.video {
+    justify-content: center;
 }
 
 .slideshow-container {
@@ -528,6 +538,7 @@ q {
     
 .footer {
     background-color: #38618C;
+    justify-content: center;
 }
 
 .footer > div > p {
@@ -568,6 +579,7 @@ q {
     flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
+    justify-content: center;
 }
 
 .auheading img {
@@ -604,7 +616,7 @@ q {
 }
     
 .imgcraig > img, .imggen > img {
-    max-width: 50vw;
+    max-width: 30vw;
 }
     
 .auinfo {
