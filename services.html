@@ -19,8 +19,8 @@
         <div class="login"><button onclick="window.login.showModal()"> <p>Client Login</p> </button></div>
     </div>
 
-      <!--Menubar Contents-->
-    <div id="mySidenav" class="menu sidenav" style="width:0px;">
+    <!--Menubar Contents-->
+    <div id="mySidenav" class="menu sidenav menu-hide">
         <div class="menulogo"><img class="menuimg" style="height:70px;" src="./images/logowhite.png" alt=""></div>
 
         <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
@@ -36,7 +36,7 @@
 
         <div class="menuOpt">
             <div><a href="./index.html">Home</a></div>
-            <div><a href="./services.html">Background Screening Service</a></div>
+            <div><a href="./services.html">Background Screening Services</a></div>
             <div><a href="">Other Additional Services</a></div>
             <div><a href="">Scientific Content Analysis (SCAN)</a></div>
             <div><a href="">The VIEW Question Questionnaire</a></div>
@@ -49,7 +49,7 @@
             <div><a href="./contactus.html">Contact Us</a></div>
         </div>
 
-       <div class="menufooter">
+        <div class="menufooter">
             <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b> © All rights reserved - site last updated April 2023</p></div>
         </div>
 
@@ -57,11 +57,12 @@
 
     <script>
        function openNav() {
-            document.getElementById("mySidenav").style.width = "320px";
+           document.getElementById("mySidenav").classList.remove("menu-hide");
+
         }
 
         function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav").classList.add("menu-hide");
         }
     </script>
 
@@ -72,7 +73,7 @@
         </form>
 
         <div class = "clientLogin-wrapper">
-           <div><img class="iconLogin" src="./images/iconplaceholder.png" alt=""></div>
+           <div><img class="iconLogin" src="./images/client_icon.png" alt=""></div>
            <div class="cltext">
             <div><input type="text" placeholder="Username"></div>
             <div><input type="text" placeholder="Password"></div>

@@ -19,51 +19,52 @@
         <div class="login"><button onclick="window.login.showModal()"> <p>Client Login </p></button></div>
     </div>
 
-      <!--Menubar Contents-->
-    <div id="mySidenav" class="menu sidenav" style="width:0px;">
-        <div class="menulogo"><img class="menuimg" style="height:70px;" src="./images/logowhite.png" alt=""></div>
-
-        <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
-
-        <div class="menuAcc">
-            <div><img class="icon" height="130px" src="./images/iconplaceholder1.png" alt=""></div>
-            <div><h3>Name</h3></div>
-            <div><p>username</p></div>
-            <div class="AccButton"><button>Account</button></div>
-        </div>
-
-        <div class="menudivider"></div>
-
-        <div class="menuOpt">
-            <div><a href="./index.html">Home</a></div>
-            <div><a href="./services.html">Background Screening Service</a></div>
-            <div><a href="">Other Additional Services</a></div>
-            <div><a href="">Scientific Content Analysis (SCAN)</a></div>
-            <div><a href="">The VIEW Question Questionnaire</a></div>
-            <div><a href="">News</a></div>
-            <div><a href="">Why Verify</a></div>
-            <div><a href="">Choosing a Screening Provider</a></div>
-            <div><a href="">FAQs</a></div>
-            <div><a href="">Privacy</a></div>
-            <div><a href="./aboutus.html">About Us</a></div>
-            <div><a href="./contactus.html">Contact Us</a></div>
-        </div>
-
-        <div class="menufooter">
-            <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b> © All rights reserved - site last updated April 2023</p></div>
-        </div>
-
-    </div> 
-
-    <script>
-       function openNav() {
-            document.getElementById("mySidenav").style.width = "320px";
-        }
-
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
+         <!--Menubar Contents-->
+         <div id="mySidenav" class="menu sidenav menu-hide">
+            <div class="menulogo"><img class="menuimg" style="height:70px;" src="./images/logowhite.png" alt=""></div>
+    
+            <div class="back"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img height="30px" src="./images/back.png" alt=""></a></div>
+    
+            <div class="menuAcc">
+                <div><img class="icon" height="130px" src="./images/iconplaceholder1.png" alt=""></div>
+                <div><h3>Name</h3></div>
+                <div><p>username</p></div>
+                <div class="AccButton"><button>Account</button></div>
+            </div>
+    
+            <div class="menudivider"></div>
+    
+            <div class="menuOpt">
+                <div><a href="./index.html">Home</a></div>
+                <div><a href="./services.html">Background Screening Services</a></div>
+                <div><a href="">Other Additional Services</a></div>
+                <div><a href="">Scientific Content Analysis (SCAN)</a></div>
+                <div><a href="">The VIEW Question Questionnaire</a></div>
+                <div><a href="">News</a></div>
+                <div><a href="">Why Verify</a></div>
+                <div><a href="">Choosing a Screening Provider</a></div>
+                <div><a href="">FAQs</a></div>
+                <div><a href="">Privacy</a></div>
+                <div><a href="./aboutus.html">About Us</a></div>
+                <div><a href="./contactus.html">Contact Us</a></div>
+            </div>
+    
+            <div class="menufooter">
+                <div class=""><p><b>Personal Verification Ltd 2006 - 2023</b> © All rights reserved - site last updated April 2023</p></div>
+            </div>
+    
+        </div> 
+    
+        <script>
+           function openNav() {
+               document.getElementById("mySidenav").classList.remove("menu-hide");
+    
+            }
+    
+            function closeNav() {
+            document.getElementById("mySidenav").classList.add("menu-hide");
+            }
+        </script>
 
     <!--Client Login-->
     <dialog id="login">
@@ -72,7 +73,7 @@
         </form>
 
         <div class = "clientLogin-wrapper">
-           <div><img class="iconLogin" src="./images/iconplaceholder.png" alt=""></div>
+           <div><img class="iconLogin" src="./images/client_icon.png" alt=""></div>
            <div class="cltext">
             <div><input type="text" placeholder="Username"></div>
             <div><input type="text" placeholder="Password"></div>
@@ -106,23 +107,15 @@
             <h3>Personal Verification Limited</h3>
         </div>
         <div class="contactusDeats">
-            <div>
                 <p>
+                    <b>You may also reach us at: </b>
+                    <br><br>
                     <b>Address:</b> 3 Sackville Street, Grey Lynn, Auckland 1021, NEW ZEALAND
                     <br><br>
                     <b>Telephone: </b> (64) + (9) 359 9050
                     <br><br>
                     <b>Email: </b> info@verify.co.nz
                 </p>
-            </div>
-        </div>
-        <div class="contactUsSNS">
-            <div><h3>Social Media</h3></div>
-            <div class="SNS">
-                <img src="./images/facebook.png" alt="">
-                <img src="./images/youtube.png" alt="">
-                <img src="./images/instagram.png" alt="">
-            </div>
         </div>
     </div>
 
