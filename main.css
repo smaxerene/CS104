@@ -618,7 +618,7 @@ q {
 }
     
 .aucontent > p, .text > p {
-    text-align: left !important;
+    text-align: justify !important;
 }
 
 .theprincipals {
