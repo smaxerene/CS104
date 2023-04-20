@@ -604,7 +604,30 @@ q {
     border-top: 1px solid #979797;
     margin: 50px;
 }
+
+.audivider {
+    border-top: 1px solid #979797;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.aucontent {
+    padding-top: 12px;
+}
     
+.aucontent > p, .text > p {
+    text-align: left !important;
+}
+
+.theprincipals {
+    font-family: mySecondFont;
+    font-size: 20px;
+    margin-left: 18px;
+    margin-bottom: 35px;
+}
+
 .genevieve {
     margin-top: 45px;
     padding-bottom: 40px;
